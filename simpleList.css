@@ -1,0 +1,11 @@
+details > p {
+    padding: 1px;
+    background-color: greenyellow;
+}
+details > div {
+    padding: 1px;
+    background-color: yellow;
+}
+details > summary {
+    background-color: lavender;
+}
