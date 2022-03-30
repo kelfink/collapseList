@@ -8,4 +8,11 @@ details > div {
 }
 details > summary {
     background-color: lavender;
+    font-size: x-large;
 }
+
+
+details summary > * {
+    display: inline;
+    font-size: xx-large;
+  }
