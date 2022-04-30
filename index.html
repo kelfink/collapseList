@@ -1,16 +1,19 @@
 <head>
     <link rel="stylesheet" href="simpleList.css">
+    
+    <script type="text/javascript" src="simpleList.js"></script>
 </head>
 
 <body>
 <H2>Your spell daily spell list</H2y>  
+
 <details>
   <summary><h3>Summon Monster II </h3>
     Slots:
     <input id="used1" type="checkbox"/>
     <input id="used2" type="checkbox"/>
   </summary>
-  
+  <div>
   <p>This spell summons an extraplanar creature (typically an outsider, elemental, 
     or magical beast native to another plane). It appears where you designate and 
     acts immediately, on your turn. It attacks your opponents to the best of its ability. 
@@ -29,20 +32,21 @@
     <p>
     The summon monster spells have numerous entries representing creatures that are summoned from the Outer Planes, and thus have the celestial or fiendish template or can be summoned with the entropic or resolute template (Pathfinder RPG Bestiary 2, pages 292 and 293, respectively).
   </p>
+</div>
 </details>
 <details>
-  <summary><h3>Greater Invisibility </h3>
+  <summary><span class="spell">Greater Invisibility </span>
     Slots:
     <input id="used1" type="checkbox" checked/>
   </summary>
-  <p>
+  <div><p>
     Felis donec et odio pellentesque diam volutpat commodo. Malesuada proin libero nunc consequat. Pulvinar elementum integer enim neque volutpat ac tincidunt. Sit amet massa vitae tortor condimentum lacinia quis. Vitae turpis massa sed elementum tempus egestas sed. Eget nunc lobortis mattis aliquam faucibus purus in. Dui nunc mattis enim ut. Sit amet purus gravida quis blandit turpis cursus. Varius quam quisque id diam vel quam elementum. Massa tempor nec feugiat nisl pretium fusce. Euismod quis viverra nibh cras pulvinar mattis nunc. Nec feugiat nisl pretium fusce. Adipiscing tristique risus nec feugiat in fermentum posuere urna nec. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Pellentesque habitant morbi tristique senectus et. Risus ultricies tristique nulla aliquet enim tortor at auctor. Nisi vitae suscipit tellus mauris. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Metus vulputate eu scelerisque felis.
-  </p>
+  </p></div>
 </details>
 <details>
   <summary><h3>Cure Moderate Wounds</h3>
     Slots:
-    <input id="used1" type="checkbox" checked/>
+    <input id="used2" type="checkbox" checked/>
   </summary>
   <div>
     <p>
@@ -50,5 +54,14 @@
   </p>
   </div>
 </details>
+
+
+
+  <label for="spellName">New Spell</label><input type="text" id="spellName"/>
+  <br/><label for="spellDesc">Description</label>
+  <textarea name="message" id="spellDesc" rows="10" cols="30">
+    The cat was playing in the garden.
+    </textarea>
+  <button text="Add" onClick="doAdd();false">Add</button>
 
 </body>
